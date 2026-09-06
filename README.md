@@ -24,9 +24,6 @@ predictions than any single model alone:
   `BaggingRegressor`) and combines their outputs.
 - `boosting.py` — trains a Gradient Boosting Regressor on top of the combined
   base-model predictions to iteratively correct errors.
-- `transfer_learning.py` — transfers learned weights from a base LSTM (trained on
-  auxiliary meteorological features) into a custom wavelet neural network with a
-  wavelet-based activation function, to refine the final GHI prediction.
 - `evaluation.py` — shared RMSE / MAPE / MAE / R2 evaluation used across all of the
   above.
 
